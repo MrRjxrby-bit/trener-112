@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+/* Tailwind v4: включаем dark mode по классу */
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  color-scheme: light;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+body {
+  background-color: #f1f5f9;
+  color: #0f172a;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+html.dark body {
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+
+.card-input {
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 14px;
+  background: #fff;
+  color: #0f172a;
+}
+
+.card-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 1px #3b82f6;
+}
+
+html.dark .card-input {
+  background: #1e293b;
+  color: #e2e8f0;
+  border-color: #334155;
+}
+
+/* Автоподмена фона и текста для основных контейнеров */
+html.dark .bg-white {
+  background-color: #1e293b !important;
+}
+
+html.dark .bg-slate-50 {
+  background-color: #0f172a !important;
+}
+
+html.dark .bg-slate-100 {
+  background-color: #0f172a !important;
+}
+
+html.dark .bg-slate-200 {
+  background-color: #1e293b !important;
+}
+
+html.dark .text-slate-900 {
+  color: #e2e8f0 !important;
+}
+
+html.dark .text-slate-800 {
+  color: #e2e8f0 !important;
+}
+
+html.dark .text-slate-700 {
+  color: #cbd5e1 !important;
+}
+
+html.dark .text-slate-600 {
+  color: #cbd5e1 !important;
+}
+
+html.dark .text-slate-500 {
+  color: #94a3b8 !important;
+}
+
+html.dark .border-slate-100,
+html.dark .border-slate-200,
+html.dark .border-slate-300 {
+  border-color: #334155 !important;
+}
+
+html.dark .shadow,
+html.dark .shadow-xl {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6) !important;
+}
+
+html.dark input,
+html.dark select,
+html.dark textarea {
+  background: #1e293b;
+  color: #e2e8f0;
+  border-color: #334155;
+}
+
+html.dark table thead.bg-slate-100 {
+  background-color: #0f172a !important;
+}

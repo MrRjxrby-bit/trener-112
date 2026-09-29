@@ -1,0 +1,16 @@
+{
+  "okrugs": [
+    {"code": "cao", "name": "Центральный"},
+    {"code": "sao", "name": "Северный"},
+    {"code": "svao", "name": "Северо-Восточный"},
+    {"code": "vao", "name": "Восточный"},
+    {"code": "yuvao", "name": "Юго-Восточный"},
+    {"code": "yuao", "name": "Южный"},
+    {"code": "yuzao", "name": "Юго-Западный"},
+    {"code": "zao", "name": "Западный"},
+    {"code": "szao", "name": "Северо-Западный"},
+    {"code": "zelao", "name": "Зеленоградский"},
+    {"code": "tinao", "name": "Троицкий и Новомосковский"},
+    {"code": "other", "name": "Другое"}
+  ]
+}
